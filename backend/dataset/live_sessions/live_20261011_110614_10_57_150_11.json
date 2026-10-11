@@ -1,0 +1,33 @@
+{
+  "session_id": "live_20261011_110614_10_57_150_11",
+  "target_ip": "10.57.150.11",
+  "device_id": "live_10_57_150_11",
+  "start_time": "2026-10-11T11:06:14.683357+00:00",
+  "stop_time": "2026-10-11T11:06:17.198847+00:00",
+  "duration_seconds": 2,
+  "is_active": false,
+  "backend_pid": 13496,
+  "is_process_elevated": false,
+  "available_interfaces": [
+    "10.57.150.11",
+    "192.168.56.1"
+  ],
+  "local_interface_ip": "10.57.150.11",
+  "promiscuous_mode": false,
+  "engine_status": "STOPPED",
+  "engine_message": "Capture stopped cleanly.",
+  "total_interface_packets": 0,
+  "total_interface_bytes": 0,
+  "target_packets_verified": 0,
+  "target_bytes_verified": 0,
+  "verification_state": "AWAITING_TARGET_TRAFFIC",
+  "trust_score": 100.0,
+  "risk_level": "safe",
+  "detected_anomalies": [],
+  "suspicious_ports": [],
+  "unique_destinations_count": 0,
+  "traffic_history": [],
+  "port_distribution": [],
+  "protocol_distribution": [],
+  "recent_flows": []
+}

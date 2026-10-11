@@ -88,3 +88,38 @@ export function uploadDataset(file, onProgress) {
     xhr.send(formData);
   });
 }
+
+export function startLiveMonitoring(targetIp) {
+  return request('/live_monitoring/start', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ target_ip: targetIp }),
+  });
+}
+
+export function stopLiveMonitoring(sessionId) {
+  return request('/live_monitoring/stop', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ session_id: sessionId || null }),
+  });
+}
+
+export function getLiveMonitoringStatus(sessionId) {
+  const query = sessionId ? `?session_id=${encodeURIComponent(sessionId)}` : '';
+  return request(`/live_monitoring/status${query}`);
+}
+
+export function getLiveMonitoringSessions() {
+  return request('/live_monitoring/sessions');
+}
+
+export function getLiveMonitoringDiagnostics() {
+  return request('/live_monitoring/diagnostics');
+}
+
+export function getLiveMonitoringExportUrl(sessionId) {
+  return `${API_BASE_URL}/live_monitoring/export/${sessionId}`;
+}
+
+

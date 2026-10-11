@@ -1,0 +1,118 @@
+{
+  "session_id": "live_20261011_095052_192_168_1_100",
+  "target_ip": "192.168.1.100",
+  "device_id": "live_192_168_1_100",
+  "start_time": "2026-10-11T09:50:52.365107+00:00",
+  "stop_time": "2026-10-11T09:50:52.442077+00:00",
+  "duration_seconds": 1,
+  "is_active": false,
+  "local_interface_ip": "192.168.1.3",
+  "engine_status": "STOPPED",
+  "engine_message": "Capture stopped cleanly.",
+  "total_interface_packets": 0,
+  "total_interface_bytes": 0,
+  "target_packets_verified": 7,
+  "target_bytes_verified": 840,
+  "verification_state": "TARGET_TRAFFIC_VERIFIED",
+  "trust_score": 50.0,
+  "risk_level": "warning",
+  "detected_anomalies": [
+    "Suspicious port activity (23)",
+    "Periodic beaconing pattern detected"
+  ],
+  "suspicious_ports": [
+    23
+  ],
+  "unique_destinations_count": 1,
+  "traffic_history": [
+    {
+      "timestamp": "2026-10-11T09:50:50",
+      "packets": 7,
+      "bytes": 840
+    }
+  ],
+  "port_distribution": [
+    {
+      "port": "23",
+      "count": 7
+    }
+  ],
+  "protocol_distribution": [
+    {
+      "protocol": "TCP",
+      "count": 7
+    }
+  ],
+  "recent_flows": [
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.368034+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.378729+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.389554+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.399808+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.410219+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.420726+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    },
+    {
+      "device_id": "live_192_168_1_100",
+      "timestamp": "2026-10-11T09:50:52.431268+00:00",
+      "src_ip": "192.168.1.100",
+      "dest_ip": "185.244.25.72",
+      "dest_port": 23,
+      "protocol": "TCP",
+      "bytes": 120,
+      "packets": 1
+    }
+  ]
+}

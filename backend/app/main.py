@@ -10,7 +10,8 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi import File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import PlainTextResponse, StreamingResponse
+from pydantic import BaseModel
 
 from .botnet_detector import detect_botnet_patterns
 from .data_loader import REQUIRED_COLUMNS, UPLOADS_DIR, load_telemetry, resolve_dataset_path, validate_telemetry_dataframe
@@ -25,6 +26,7 @@ from .pdf_report_generator import build_pdf_report
 from .peer_correlation import detect_peer_correlations
 from .risk_graph import build_risk_graph
 from .trust_engine import build_trust_scores
+from .live_monitor import live_monitor_service
 
 
 @dataclass
@@ -331,3 +333,51 @@ def get_device_report(device_id: str) -> StreamingResponse:
         media_type="application/pdf",
         headers={"Content-Disposition": f'attachment; filename="{device_id}_investigation_report.pdf"'},
     )
+
+
+class StartMonitoringPayload(BaseModel):
+    target_ip: str
+
+
+class StopMonitoringPayload(BaseModel):
+    session_id: str | None = None
+
+
+@app.post("/live_monitoring/start")
+def start_live_monitoring(payload: StartMonitoringPayload) -> dict[str, Any]:
+    return live_monitor_service.start_monitoring(payload.target_ip)
+
+
+@app.post("/live_monitoring/stop")
+def stop_live_monitoring(payload: StopMonitoringPayload | None = None) -> dict[str, Any]:
+    session_id = payload.session_id if payload else None
+    return live_monitor_service.stop_monitoring(session_id)
+
+
+@app.get("/live_monitoring/status")
+def get_live_monitoring_status(session_id: str | None = None) -> dict[str, Any]:
+    return live_monitor_service.get_status(session_id)
+
+
+@app.get("/live_monitoring/sessions")
+def get_live_monitoring_sessions() -> list[dict[str, Any]]:
+    return live_monitor_service.list_sessions()
+
+
+@app.get("/live_monitoring/diagnostics")
+def get_live_monitoring_diagnostics() -> dict[str, Any]:
+    return live_monitor_service.get_system_diagnostics()
+
+
+@app.get("/live_monitoring/export/{session_id}")
+def export_live_monitoring_session(session_id: str) -> PlainTextResponse:
+    csv_data = live_monitor_service.export_csv(session_id)
+    if csv_data is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+    return PlainTextResponse(
+        csv_data,
+        media_type="text/csv",
+        headers={"Content-Disposition": f'attachment; filename="{session_id}.csv"'},
+    )
+
+

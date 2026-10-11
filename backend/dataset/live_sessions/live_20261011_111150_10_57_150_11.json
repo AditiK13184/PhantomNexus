@@ -1,0 +1,631 @@
+{
+  "session_id": "live_20261011_111150_10_57_150_11",
+  "target_ip": "10.57.150.11",
+  "device_id": "live_10_57_150_11",
+  "start_time": "2026-10-11T11:11:50.043778+00:00",
+  "stop_time": "2026-10-11T11:13:43.763637+00:00",
+  "duration_seconds": 113,
+  "is_active": false,
+  "backend_pid": 10856,
+  "is_process_elevated": true,
+  "available_interfaces": [
+    "10.57.150.11",
+    "192.168.56.1"
+  ],
+  "local_interface_ip": "10.57.150.11",
+  "promiscuous_mode": true,
+  "engine_status": "STOPPED",
+  "engine_message": "Capture stopped cleanly.",
+  "total_interface_packets": 966,
+  "total_interface_bytes": 989910,
+  "target_packets_verified": 966,
+  "target_bytes_verified": 989910,
+  "verification_state": "TARGET_TRAFFIC_VERIFIED",
+  "trust_score": 85.0,
+  "risk_level": "safe",
+  "detected_anomalies": [
+    "Elevated external IP fanout"
+  ],
+  "suspicious_ports": [],
+  "unique_destinations_count": 6,
+  "traffic_history": [
+    {
+      "timestamp": "2026-10-11T11:11:50",
+      "packets": 22,
+      "bytes": 10483
+    },
+    {
+      "timestamp": "2026-10-11T11:12:00",
+      "packets": 5,
+      "bytes": 361
+    },
+    {
+      "timestamp": "2026-10-11T11:12:10",
+      "packets": 2,
+      "bytes": 93
+    },
+    {
+      "timestamp": "2026-10-11T11:12:20",
+      "packets": 10,
+      "bytes": 795
+    },
+    {
+      "timestamp": "2026-10-11T11:12:30",
+      "packets": 10,
+      "bytes": 762
+    },
+    {
+      "timestamp": "2026-10-11T11:12:40",
+      "packets": 21,
+      "bytes": 18304
+    },
+    {
+      "timestamp": "2026-10-11T11:12:50",
+      "packets": 208,
+      "bytes": 173735
+    },
+    {
+      "timestamp": "2026-10-11T11:13:00",
+      "packets": 127,
+      "bytes": 138620
+    },
+    {
+      "timestamp": "2026-10-11T11:13:10",
+      "packets": 256,
+      "bytes": 276119
+    },
+    {
+      "timestamp": "2026-10-11T11:13:20",
+      "packets": 167,
+      "bytes": 160544
+    },
+    {
+      "timestamp": "2026-10-11T11:13:30",
+      "packets": 112,
+      "bytes": 207107
+    },
+    {
+      "timestamp": "2026-10-11T11:13:40",
+      "packets": 26,
+      "bytes": 2987
+    }
+  ],
+  "port_distribution": [
+    {
+      "port": "64747",
+      "count": 590
+    },
+    {
+      "port": "443",
+      "count": 287
+    },
+    {
+      "port": "53",
+      "count": 37
+    },
+    {
+      "port": "59352",
+      "count": 8
+    },
+    {
+      "port": "53041",
+      "count": 3
+    },
+    {
+      "port": "59590",
+      "count": 2
+    }
+  ],
+  "protocol_distribution": [
+    {
+      "protocol": "UDP",
+      "count": 74
+    },
+    {
+      "protocol": "TCP",
+      "count": 892
+    }
+  ],
+  "recent_flows": [
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.525090+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.525177+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.525315+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 75,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.525498+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.525681+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.526484+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.527586+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.527962+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.533145+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.533491+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 75,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.577575+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.585624+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "104.18.32.47",
+      "dest_port": 443,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.594233+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.930718+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "104.18.32.47",
+      "dest_port": 443,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.931563+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 374,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.932106+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 118,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:34.932950+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "104.18.32.47",
+      "dest_port": 443,
+      "protocol": "TCP",
+      "bytes": 75,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:35.032578+00:00",
+      "src_ip": "104.18.32.47",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 64747,
+      "protocol": "TCP",
+      "bytes": 40,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.149454+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 58,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.149720+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 58,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.149968+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 58,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.261475+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 52211,
+      "protocol": "UDP",
+      "bytes": 240,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.261952+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 61132,
+      "protocol": "UDP",
+      "bytes": 211,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:36.262078+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 55047,
+      "protocol": "UDP",
+      "bytes": 235,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.861626+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 63,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.862501+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 63,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.863202+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 63,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.974124+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 49962,
+      "protocol": "UDP",
+      "bytes": 142,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.974345+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 54641,
+      "protocol": "UDP",
+      "bytes": 123,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:40.974470+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 65430,
+      "protocol": "UDP",
+      "bytes": 130,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.328306+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 80,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.328499+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 80,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.328589+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 80,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.364664+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 60270,
+      "protocol": "UDP",
+      "bytes": 140,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.364881+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 54069,
+      "protocol": "UDP",
+      "bytes": 197,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.365003+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 63766,
+      "protocol": "UDP",
+      "bytes": 185,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.812123+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 99,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.812823+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 99,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.813412+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 99,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.895455+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 61864,
+      "protocol": "UDP",
+      "bytes": 156,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:41.895788+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 49194,
+      "protocol": "UDP",
+      "bytes": 203,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:42.304975+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 53102,
+      "protocol": "UDP",
+      "bytes": 191,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:42.880615+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "40.90.64.154",
+      "dest_port": 443,
+      "protocol": "TCP",
+      "bytes": 52,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.229227+00:00",
+      "src_ip": "40.90.64.154",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 63647,
+      "protocol": "TCP",
+      "bytes": 52,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.247825+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 59,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.248464+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 59,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.249113+00:00",
+      "src_ip": "10.57.150.11",
+      "dest_ip": "10.57.150.122",
+      "dest_port": 53,
+      "protocol": "UDP",
+      "bytes": 59,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.290646+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 53940,
+      "protocol": "UDP",
+      "bytes": 119,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.290963+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 56132,
+      "protocol": "UDP",
+      "bytes": 203,
+      "packets": 1
+    },
+    {
+      "device_id": "live_10_57_150_11",
+      "timestamp": "2026-10-11T11:13:43.291452+00:00",
+      "src_ip": "10.57.150.122",
+      "dest_ip": "10.57.150.11",
+      "dest_port": 62545,
+      "protocol": "UDP",
+      "bytes": 191,
+      "packets": 1
+    }
+  ]
+}

@@ -5,6 +5,7 @@ const links = [
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/devices', label: 'Devices' },
   { to: '/network', label: 'Network Map' },
+  { to: '/live-monitoring', label: 'Live Monitoring' },
 ];
 
 export default function Navbar() {

@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import Devices from './pages/Devices';
 import DeviceInvestigation from './pages/DeviceInvestigation';
 import NetworkMap from './pages/NetworkMap';
+import LiveMonitoring from './pages/LiveMonitoring';
 
 export default function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/devices" element={<Devices />} />
           <Route path="/devices/:deviceId" element={<DeviceInvestigation />} />
           <Route path="/network" element={<NetworkMap />} />
+          <Route path="/live-monitoring" element={<LiveMonitoring />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
